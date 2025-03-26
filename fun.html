@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun & Surprises - Aditi & Somil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="bounce-in">😂 Fun & Surprises</header>
+
+    <div class="container fade-in">
+        <h2 class="zoom-in">Ready for some laughs? 😂</h2>
+
+        <p class="typewriter">Aditi, are you ready for some fun?</p>
+
+        <h3>Q&A Time! 🤔</h3>
+        <p>Let's see how well you know me!</p>
+        <p><strong>Q: What’s my favorite way to spend a weekend?</strong></p>
+        <button class="btn" onclick="revealAnswer(1)">Show Answer</button>
+        <p id="answer1" class="hidden">A: Annoying you until you laugh! 🤭</p>
+        
+        <p><strong>Q: If I had a superpower, what would it be?</strong></p>
+        <button class="btn" onclick="revealAnswer(2)">Show Answer</button>
+        <p id="answer2" class="hidden">A: Freezing time… so I can spend more time with you! ⏳</p>
+        
+        <p><strong>Q: What’s my favorite thing about you?</strong></p>
+        <button class="btn" onclick="revealAnswer(3)">Show Answer</button>
+        <p id="answer3" class="hidden">A: Everything. Duh. 😏💖</p>
+        
+
+        <h3>Surprise! 🎁</h3>
+        <p>Click the button to see a surprise!</p>
+        <button class="btn" onclick="revealSurprise()">🎉 Click Me!</button>
+        <p id="surprise" class="hidden">Aditi, you are the best part of my life. 🌟</p>
+
+        <div class="nav-buttons">
+            <a class="btn" href="index.html">🏠 Home</a>
+            <a class="btn" href="memories.html">🌟 Our Best Memories</a>
+            
+        </div>
+    </div>
+
+    <script>
+        function revealAnswer(num) {
+            var answer = document.getElementById("answer" + num);
+            if (answer.classList.contains("hidden")) {
+                answer.classList.remove("hidden");
+            } else {
+                answer.classList.add("hidden");
+            }
+        }
+    
+        function revealSurprise() {
+            var surprise = document.getElementById("surprise");
+            if (surprise.classList.contains("hidden")) {
+                surprise.classList.remove("hidden");
+            } else {
+                surprise.classList.add("hidden");
+            }
+        }
+    </script>
+    
+    
+
+</body>
+</html>
